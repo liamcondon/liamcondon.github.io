@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Portfolio of Liam Condon, Front End Web Developer for web and mobile interfaces in Dublin">
+  <meta name="keywords" content="Front end web development, front end web developer in Dublin">
+  <meta name="author" content="Liam Condon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Finkglas Tattoo | Liam Condon Portfolio</title>
+  <link type="text/css" rel="stylesheet" href="../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="../scripts/scripts.js"></script>
+  <script defer src="https://friconix.com/cdn/friconix.js"></script>  <!-- Need this for chevrons used in backToTop, next, and prev buttons  -->
+</head>
+
+<body>
+  <!-- div container to wrap all content  -->
+  <div class="container">
+    <!-- header contains logo and menu icon and navigation -->
+    <header>
+      <a href="#" id="menu-icon">&#8801;</a>
+      <a href="../index.html">
+        <div id="logo">
+          <h2 class="logo-name">LIAM CONDON</h2>
+        </div>
+
+      </a>
+
+
+      <!-- Hamburger menu functionality for mobile (mylinks) -->
+
+      <div id="mylinks">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+     </div>
+
+
+     <nav class="top-nav">
+       <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="../about.html">About</a></li>
+         <li><a href="../portfolio.html" class="current">Portfolio</a></li>
+         <li><a href="../blog.html">Blog</a></li>
+         <li><a href="../contact.html">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+
+
+   <main class="projects">
+     <section class="section-three">
+        <h2 class="border-title">Finkglas Tattoo</h2>
+       <section class="space-above">
+        <ul class="row-one">
+          <li>
+           <p>This was a collaborative project undertaken during my front-end development training at Finglas Training Centre, Dublin 11. 
+             'Finkglas' was a fictional tattoo studio located in (you guessed it!) Finglas village. The client wanted a website and
+             rebrand of his business to reflect the area in which he lived. He wanted all this completed in two weeks.
+           </p>
+          </li>
+          <li class="image">
+           <img src="../images/finkglas/tattoo-girl.jpg" class="image-resize" alt="desktop screenshot tattoo website"/>
+          </li>
+        </ul>
+      
+        <ul class="row-rev">
+          <li>
+            <p>The client wanted the studio name to convey his love for the
+            Irish language. Finglas comes from the Irish Fionnghlas, which literally means 'clear stream'. On account 
+            of the client's apparent aquaphobia, we decided to go with an alternate rendering of 'glas'
+            to green. We used that colour to emphasise the 'ink' in the Finkglas logo and as an accent colour on
+            website.
+            </p>
+          </li>
+          <li class="image">
+            <img src="../images/finkglas/finkglas-colour-scheme.png" class="image-resize" alt="finkglas website colour scheme"/>
+          </li>
+        </ul>
+        
+        <ul class="row-one">  
+          <li>
+            <p>The client expressed his desire to be involved in every step of the process. We kept him in the loop with our ideas for the site design creating many wireframes and worked closely with him to refine and lay everything out exactly how he wished.</p>
+          </li>
+          <li class="image">  
+            <img src="../images/finkglas/wireframe-finkglas-5.png" class="image-resize" alt="wireframe finkglas artists page"/>
+          </li>    
+        </ul>
+
+        <ul class="row-rev">
+          <li>
+            <p>We used custom Javascript, HTML and CSS, and third-party jQuery plugins for
+              mobile, tablet, and desktop versions of the website. The two pages I worked
+              on exclusively were the Artists and Contact page, parts of which are shown below.
+            </p>
+          </li>
+          <li class="image">
+            <img src="../images/finkglas/tattoo-artists.jpg" class="image-resize" alt="desktop screenshot tattoo website artists"/>
+          </li>
+        </ul>
+
+      </section>
+        
+      <!-- Insert chevron link at the bottom right corner of page that links to next project -->
+      <div class="next">
+          <p>Next Project</p>
+          <a href="ftc-web-developer.html" aria-label="link to next project"><i class="fi-xwlrxl-chevron-wide fi-4x"></i></a>
+      </div>
+
+
+     
+     
+     </section>
+  </main>
+
+   <!-- bottom banner image goes here -->
+  <div class="bottom-strip">
+        <ul>
+          <li><a class="grow" href="https://github.com/liamcondon"><img src="../images/github-icon.png" alt="github icon"/></a></li>
+          <li><a class="grow" href="https://www.linkedin.com/in/liamfcondon/"><img src="../images/linkedin-icon.svg" height="32" width="32" alt="linkedin icon"/></a></li>
+          <li><a class="grow" href="mailto:liamfcondon@gmail.com"><img src="../images/email-icon.svg" height="32" width="32" alt="email icon"/></a></li>
+        </ul>
+    </div>
+
+  <footer>
+      
+    <p class="copyri">&copy; 2020 Liam Condon</p>
+  
+
+      <nav id="bottom-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+        <button id="backToTop"  aria-label="UP button"><i class="fi-xnsuxl-chevron-solid fi-4x"></i></button>
+      
+    </footer>
+  </div>
+
+</body>
+</html>
