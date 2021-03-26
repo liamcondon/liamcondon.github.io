@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169951831-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169951831-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Portfolio of Liam Condon, Front End Web Developer for web and mobile interfaces in Dublin">
+  <meta name="keywords" content="Front end web development, front end web developer in Dublin">
+  <meta name="author" content="Liam Condon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio| Liam Condon Portfolio</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="scripts/scripts.js"></script>
+  <script defer src="https://friconix.com/cdn/friconix.js"></script>  <!-- Need this for chevrons used in backToTop, next, and prev buttons  -->
+</head>
+
+<body>
+  <!-- div container to wrap all content  -->
+  <div class="container">
+    <!-- header contains logo and menu icon and navigation -->
+    <header>
+      <a href="#" id="menu-icon">&#8801;</a>
+      <a href="index.html">
+        <div id="logo">
+          <h2 class="logo-name">LIAM CONDON</h2>
+        </div>
+      </a>
+
+      <!-- Hamburger menu functionality for mobile (mylinks) -->
+      <div id="mylinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+     </div>
+
+     <nav class="top-nav">
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="portfolio.html" class="current">Portfolio</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="contact.html">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+
+
+   <main>
+     <section class="section-three">
+       <!-- border-title is simply a bottom border for the alternate page title name to Portfolio, viz. Projects -->
+       <h2 class="border-title">Projects</h2>
+       <ul class="projects space-above">
+         <!-- Project one is Finkglas Tattoo in self-contained figure element with caption -->
+         <li class="project-one">
+          <a href="portfolio/finkglas-tattoo.html">
+            <figure class="grow-pro"> 
+              <img src="images/finkglas/tattoo-boy.jpg" 
+              class="image-resize" alt="desktop screenshot tattoo website"/>
+             <figcaption>
+                <h4>Finkglas Tattoo</h4>
+                <p>Class project in Finglas Training Centre</p>
+              </figcaption>
+            </figure>
+            </a>
+        </li>
+         
+         <!-- Project two is Finglas Training Centre (FTC) Web Developer Website also in figure element with caption -->
+        <li class="project-two">
+          <a href="portfolio/ftc-web-developer.html">
+            <figure class="grow-pro"> 
+              <img src="images/ftcweb/webdev-screens.jpg" 
+              class="image-resize grow-pro" alt="screenshots many devices ftc web developer"/>
+              <figcaption>
+                <h4>Web Developer Website</h4>
+                <p>Individual project to create a website for FTC course</p>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+       </ul>
+       
+     </section>
+  </main>
+
+     <!-- bottom banner image goes here -->
+  <div class="bottom-strip">
+        <ul>
+          <li><a class="grow" href="https://github.com/liamcondon"><img src="images/github-icon.png" alt="github icon"/></a></li>
+          <li><a class="grow" href="https://www.linkedin.com/in/liamfcondon/"><img src="images/linkedin-icon.svg" height="32" width="32" alt="linkedin icon"/></a></li>
+          <li><a class="grow" href="mailto:liamfcondon@gmail.com"><img src="images/email-icon.svg" height="32" width="32" alt="email icon"/></a></li>
+        </ul>
+    </div>
+
+   <footer>
+      
+    <p class="copyri">&copy; 2020 Liam Condon</p>
+
+    <nav id="bottom-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <button id="backToTop"  aria-label="UP button"><i class="fi-xnsuxl-chevron-solid fi-4x"></i></button>
+
+</footer>
+
+ </div>  <!-- end of container -->
+
+</body>
+</html>
