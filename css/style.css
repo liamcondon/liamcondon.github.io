@@ -1,0 +1,877 @@
+/*---------- Reset ------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*---------------- base styles ------------------*/
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato/lato-regular-webfont.woff2') format('woff2'),
+         url('lato/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('raleway/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'expletussans';
+    src: url('expletus/expletussans-regular-webfont.woff2') format('woff2'),
+         url('expletus/expletussans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: latoregular, sans-serif;
+  background-color: #f0f0f0;
+  color: #292624;
+}
+
+h1 {
+    font-family: ralewayregular, sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+   font-family: ralewayregular, sans-serif;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-family: railwayregular, sans-serif;
+  color: #f0f0f0;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+
+a {
+  font-size: 1em;
+   font-family: railwayregular, sans-serif;
+  text-decoration: none;
+  color: #292624;
+}
+
+p {
+  padding: .5em 0 .5em 0;
+}
+
+/*-----------------------------------------------*/
+
+
+/*---------------------------  H O M E ---------------------------*/
+
+#logo {
+    padding: 1.6em;
+}
+
+.logo-name {
+    font-family: expletussans, sans-serif;
+    font-size: 1em;
+}
+
+#menu-icon {
+  font-size: 3em;
+  position: absolute;
+  right: .5em;
+}
+
+/*---- Hamburger menu functionality for mobile ---*/
+
+#mylinks {
+  display: none;
+}
+
+
+#mylinks ul {
+  margin-top: .5em;
+  list-style-type: none;
+}
+
+
+#mylinks a {
+  display: inline-block;
+  width: 100%;
+  background-color: #252525;
+  font-size: 1.2em;
+  text-align: center;
+  padding: .5em;
+  box-sizing: border-box;
+  color: #f0f0f0;
+}
+
+#mylinks a:active, #mylinks a:focus, #mylinks a:hover {
+  background-color: #8cb921;
+  color: #000;
+}
+
+/*-------------------------------------------------*/
+
+.top-nav {
+  display: none;
+}
+
+.section-one h1 {
+    font-size: 1.7em;
+}
+
+
+.section-one {
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  
+  /* Using flexbox to centre content of section element horizontally and vertically
+   with the justify-content and the align-items properties set to center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Animation for 'Front End Web Developer' text */
+/* slide text left and slide text right */
+
+@keyframes slidein-left {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.mid-line {  
+  animation: 3s slidein-right;
+}
+
+.bottom-line {  
+  animation: 3s slidein-left;
+}
+/* End of slidein text */
+
+
+/* animation glow effect once the text slides into position */
+/* Hi! I'm Liam Front End Web Developer glows the signature luminous green; fades in and out */
+.glow {
+  animation: glow 4s ease-in-out;
+  animation-delay: 3s;
+  }
+
+.mid-line, .top-line, .bottom-line {
+    font-size: 2em;
+}
+@keyframes glow {
+  from {
+    
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e3faae, 0 0 20px #e3faae, 0 0 25px #e3faae, 0 0 30px #e3faae, 0 0 35px #e3faae;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #8fcc00, 0 0 30px #8fcc00, 0 0 40px #8fcc00, 0 0 50px #8fcc00, 0 0 60px #8fcc00, 0 0 70px #8fcc00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e3faae, 0 0 20px #e3faae, 0 0 25px #e3faae, 0 0 30px #e3faae, 0 0 35px #e3faae;
+  }
+}
+/* End of glow animation */
+
+/* this is the green strip that contains the social media links */
+.bottom-strip {
+    background-color: #8cb921; 
+    min-height: 10vh;
+}
+
+/* nav display in row */
+.bottom-strip ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+/* insert space between icons */
+.bottom-strip li a {
+  margin-right: 1em; 
+}
+
+/*** Grow effect on hover over social media links ***/
+.grow {
+  display: block;
+  padding: .5em;
+  border-radius: 50%;
+  animation: none;
+  transition: all .5s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.4);
+}
+/*** end of grow effect ***/
+
+ 
+footer a, footer p {
+  color: #f0f0f0;
+}
+
+footer {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+}
+
+/* arrow button on bottom right corner of page */
+#backToTop {
+  background-color: #252525;
+  color: #8cb921;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
+}
+
+#backToTop:hover {
+  border-color: #8cb921;
+  transform: scale(1.1);
+}
+/* end of arrow button styling and hover effect */
+
+#bottom-nav a {
+  text-transform: uppercase;
+  font-family: ralewaythin, sans-serif;
+}
+
+#bottom-nav {
+  display: none;
+}
+
+.copyri {
+  color: #f0f0f0;
+ }
+
+/*--------------------------media query tablet---------------------*/
+
+@media only screen and (min-width: 768px) {
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+  /* menu-icon not displayed on desktop */
+   #menu-icon {
+      display:none;
+    }
+
+    .top-nav {
+      display: block;
+    }
+
+    /* nav display in row */
+    .top-nav ul {
+        list-style-type:none;
+        font-size: .9em;
+        display: flex;
+        padding: 2em;
+        text-transform: uppercase;
+    }
+
+    /* underline is positoned relative to li. Without this the underline on top navigation items will not work */
+    .top-nav li a {
+      margin-right: 2em; /*space between top navigation items*/
+      position: relative;
+    }
+
+    .top-nav li a:hover, .top-nav li a:focus, .top-nav li a:active {
+      color: #000;
+    }
+   
+
+    /* Use ::before to hide the underline with transform, setting scaleX to 0.*/
+    .top-nav li a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #8cb921;
+      transform: scaleX(0);
+      transition: all 0.5s ease-in-out 0s;
+    }
+
+    /* show the underline on hovering a navigation item */
+    .top-nav li a:hover::before {
+      transform: scaleX(1);
+    }
+  /********************************/
+
+    /* linear gradient on current page in top navigation is a luminous green */
+     li a.current {
+       background: -webkit-linear-gradient(left, transparent 0%,#bde363 50%,transparent 100%);
+    }
+
+}
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+    body {
+        font-size: 1.13em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+  
+    h2 {
+        font-size: 2em;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        color: #f0f0f0;
+    }
+  
+     h4 {
+        font-size: 1.2em;
+    }
+    
+    /*
+    .section-one {
+      height: 70vh;
+    }*/
+  
+    #bottom-nav {
+      display: block;
+    }
+  
+    #bottom-nav a {
+      text-transform: uppercase;
+      font-family: ralewaythin, sans-serif;
+      margin-right: 1em; /*space between bottom navigation items*/
+      line-height: 1.8em;
+    }
+
+    #bottom-nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+    }
+
+    #bottom-nav li a:hover, #bottom-nav li a:focus, #bottom-nav li a:active {
+      color: #8cb921;
+    }
+
+    /* footer links horizontal in tablet and desktop */
+    #bottom-nav ul {
+      flex-direction: row;
+    }    
+}
+
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+
+
+/*-------------------------  A B O U T ---------------------------*/
+
+
+.section-two {
+  padding: 3em 2em 3em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+
+.about-me {
+    width: 100%;
+}
+
+
+.cv-button {
+  padding: 1em;
+  background-color: #d7d7d7;
+  border-radius: .5em;
+}
+
+/* put space between about me text and my CV */
+.about-me p:nth-child(6) {
+  margin-bottom: 2em;
+}
+
+/* insert space on page to give spacious feel */
+.space-above {
+  padding-top: 2em;
+}
+
+/* indent bullet points */
+.list-indent li {
+  margin-left: 2em;
+}
+
+/*** Grow effect on hover over Download CV button ***/
+.grow-cv {
+  animation: none;
+  transition: all .5s ease-in-out;
+}
+
+.grow-cv:hover {
+    transform: scale(1.2);
+}
+/*** end of grow effect ***/
+
+
+/*--------------------------media query tablet---------------------*/
+
+@media only screen and (min-width: 768px) {
+
+.profile-pic img {
+    width: 9em;
+    height: 9em;
+  }
+
+  .about-me {
+    width: 70%;
+    
+  }
+
+}
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+.profile-pic img {
+     width: 11em;
+  height: 11em;
+  }
+
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------- P O R T F O L I O -------------------------*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.section-three {
+  padding: 3em 2em 3em 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Animation for slidein projects */
+@keyframes slidein-left {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.project-two {  
+  animation: 2s slidein-right;
+}
+
+.project-one {  
+  animation: 2s slidein-left;
+}
+/* End of slidein projects */
+
+.image-resize {
+  width: 100%;
+  height: 100%;
+  max-width: 35em;
+  max-height: 25em;
+  margin: 0 auto;
+  box-sizing: border-box; /* prevent image from spilling over into padding */
+}
+
+.projects li {
+  padding: 1em;
+  margin: 1em;
+  border: 2px solid #ebebeb;
+  background-color: #f0f5f5;
+}
+
+figcaption {
+  padding: 1em 0 1em 0;
+}
+
+/* Don't display description of projects on mobile or tablet */
+figcaption p {
+  padding: .3em 0 0 0;
+  display: none;
+  font-family: ralewaythin, sans-serif;
+}
+
+/*** Grow effect on hover over project links ***/
+.grow-pro {
+  animation: none;
+  transition: all .5s ease-in-out;
+}
+
+.grow-pro:hover {
+    transform: scale(1.05);
+}
+
+.grow-pro:hover h4 {
+  color: #8cb921;
+  background-color: #252525;
+  transition: all 1s ease-in-out;
+}
+
+/*** end of grow effect ***/
+
+
+/*------------- media query tablet -------------------*/
+
+@media only screen and (min-width: 768px) {
+
+  .projects {
+    flex-direction: row;
+
+  }
+}
+/*----------------------------------------------------*/
+
+
+/*------------- media query desktop ------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+    /* Display description of projects on desktop */
+    figcaption p {
+        display: inline-block;
+    }
+
+}
+
+/*----------------------------------------------------*/
+
+
+
+/*------------ P O R T F O L I O - Finkglas Tattoo ----------------*/
+
+
+
+.row-one, .row-rev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 2em;
+}
+
+.row-one li, .row-rev li {
+  padding: 1em;
+  margin: 1em;
+}
+
+.border-title {
+  border-bottom: .06em solid #d7d7d7;
+}
+
+.row-one p {
+  padding: 1em 0 1em 0;
+}
+
+/* next/prev buttons to navigate between projects */
+/* float chevron and text 'Next" to right. Use text-align to position 'Next' right above chevron */
+.next {
+    float: right;
+    text-align: center;
+    animation: none;
+    transition: all .5s ease-in-out;
+}
+
+.prev {
+  float: left;
+  text-align: center;
+  animation: none;
+  transition: all .5s ease-in-out;
+}
+
+.next:hover, .prev:hover {
+  transform: scale(1.2);
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*------------- media query tablet -------------------*/
+@media only screen and (min-width: 768px) {
+
+    .row-one {
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+    
+   .row-rev {
+        flex-direction: row-reverse;
+        /* justify-content: space-between; */
+   }
+
+    .image {
+    max-width: 40%;
+    flex-shrink: 0;
+    }  
+  
+ /* .row-one p:first-child,
+  .row-one p:nth-child(2) Liam12-2020*/
+  /* .row-one p
+  {
+    padding-right: 2em;
+    /* max-width: 60%; Liam12-2020
+  } */
+  
+
+   .row-two {
+      /* width: 60%; Liam12-2020*/
+      margin: 0 auto;
+      padding-left: 1em;
+      /* border-left: .06em solid #d7d7d7;;
+      border-top: .06em solid #d7d7d7; Liam12-2020*/
+  }
+
+  .row-three {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/*----------------------------------------------------*/
+
+
+/*--------------------------media query desktop-------*/
+@media only screen and (min-width: 1100px) {
+
+  .row-three {
+  }
+
+}
+/*----------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------*/
+
+
+/*----------- P O R T F O L I O - FTC Web Developer ---------------*/
+
+.border-title {
+  text-align: right;
+}
+
+.col-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  
+  justify-content: center;
+}
+
+.big-image {
+  width: 100%;
+  height: 100%;
+  max-width: 60em;
+  max-height: 50em;
+  padding: 1em;
+  margin: 0 auto;
+  box-sizing: border-box; /* prevent image from spilling over into padding */
+}
+
+.big-image-2 {
+  max-width: 40em;
+  max-height: 30em;
+}
+
+.image-3 {
+  max-width: 20em;
+  max-height: 40em;
+}
+/*------------- media query tablet -------------------*/
+@media only screen and (min-width: 768px) {
+
+.col-one {
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+}
+
+/*----------------------------------------------------*/
+
+
+/*---------------------   C O N T A C T   -------------------------*/
+
+.dark {
+  background-color: #252525;
+  height: 80vh;
+  padding: 3em 2em 3em 2em;
+}
+
+.dark a {
+  color: #f0f0f0;
+}
+
+.text {
+  width: 90%;
+  padding: 1em;
+  background-color: #424242;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+#message {
+  height: 8em;
+}
+
+#form-layout {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#form-layout label {
+  color: #f0f0f0;
+  display: block;
+}
+
+.dark h2 {
+  color: #f0f0f0;
+}
+
+.border-line {
+  border-bottom: .06em solid #333;
+  text-align: right;
+}
+
+.submit {
+    background-color: #252525;
+    border: .1em solid #f0f0f0;
+    color: #f0f0f0;
+    padding: .5em 1em .5em 1em;
+    text-transform: uppercase;
+    font-family: ralewaythin, sans-serif;
+    letter-spacing: .2em;
+    border-radius: .5em;
+}
+
+.submit:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  cursor: pointer;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+/*------------- media query tablet -------------------*/
+@media only screen and (min-width: 768px) {
+
+ #form-layout {
+     width: 70%;
+ }
+
+
+}
+
+/*----------------------------------------------------*/
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+  
+   #form-layout {
+     width: 50%;
+ }
+
+}
+
+/*-----------------------------------------------------------------*/
+
